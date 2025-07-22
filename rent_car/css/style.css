@@ -483,9 +483,10 @@ body {
 }
 
 .reviews {
-  padding: 120px 0;
+  padding: 0 0 120px;
   background: #FFFFFF;
   position: relative;
+  overflow: hidden;
 }
 .reviews::before {
   content: "";
@@ -499,47 +500,34 @@ body {
   filter: blur(200px);
   z-index: 1;
 }
-.reviews__container {
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 0 15px;
-  position: relative;
-  z-index: 2;
-}
 .reviews__title {
   font-family: "Muller", sans-serif;
   font-weight: 700;
   font-size: 48px;
   color: #D4CC7B;
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   letter-spacing: -0.045em;
+  position: relative;
+  z-index: 4;
 }
 .reviews__content {
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 40px;
-  margin-bottom: 60px;
 }
 .reviews__cards {
   display: flex;
-  gap: 20px;
-  flex: 1;
-}
-.reviews__car-image {
-  flex-shrink: 0;
-  width: 655px;
-  height: 808px;
-}
-.reviews__car-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.reviews__dots {
-  display: flex;
+  gap: 72px;
   justify-content: center;
+}
+.reviews__pagination {
+  display: flex;
   gap: 13px;
+  align-items: center;
+  position: relative;
+  z-index: 4;
 }
 .reviews__dot {
   width: 21px;
@@ -556,97 +544,177 @@ body {
 .reviews__dot:hover {
   background: #C4C4C4;
 }
+.reviews__bg-car {
+  position: absolute;
+  top: 83px;
+  right: -92px;
+  z-index: 0;
+  pointer-events: none;
+}
+.reviews__bg-image {
+  width: 654.92px;
+  height: 807.68px;
+  object-fit: contain;
+  opacity: 0.3;
+}
+.reviews__container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative;
+  z-index: 3;
+}
 
 .review-card {
-  flex: 1;
+  width: 247px;
   height: 405px;
-  border-radius: 10px;
   border: 2px solid #FFFFFF;
-  box-shadow: 0px 4px 10px 0px rgba(124, 124, 124, 0.4);
+  border-radius: 10px;
   overflow: hidden;
-  background: #F5F5F5;
-  display: flex;
-  flex-direction: column;
+  box-shadow: 0px 4px 10px 0px rgba(124, 124, 124, 0.4);
+  transition: transform 0.3s;
+  position: relative;
+  z-index: 4;
 }
-.review-card__header {
-  background: #25D366;
-  padding: 12px 16px;
+.review-card:hover {
+  transform: translateY(-5px);
+}
+.review-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer {
+  background: #000000;
+  color: #FFFFFF;
+  padding: 44px 0 0;
+}
+.footer__container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.footer__content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  margin-bottom: 40px;
 }
-.review-card__profile {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+.footer__logo {
+  width: 315px;
+  height: 113px;
 }
-.review-card__avatar {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background: #FFFFFF;
+.footer__logo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
-.review-card__name {
-  color: #FFFFFF;
+.footer__info {
+  max-width: 397px;
+}
+.footer__description {
   font-family: "Muller", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 24px;
+  color: #FFFFFF;
+  margin: 0 0 40px;
+  line-height: 1.27;
+  letter-spacing: -0.045em;
 }
-.review-card__icons {
-  display: flex;
-  gap: 8px;
-}
-.review-card__icon {
-  width: 20px;
-  height: 20px;
-  background: #FFFFFF;
-  border-radius: 50%;
-}
-.review-card__icon--call {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2325D366'%3E%3Cpath d='M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19c-.54 0-.99.45-.99.99 0 9.36 7.6 16.96 16.96 16.96.54 0 .99-.45.99-.99v-3.5c0-.54-.45-.99-.99-.99z'/%3E%3C/svg%3E");
-  background-size: 12px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.review-card__icon--video {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2325D366'%3E%3Cpath d='M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z'/%3E%3C/svg%3E");
-  background-size: 12px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.review-card__messages {
-  flex: 1;
-  padding: 16px;
+.footer__contacts {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 20px;
 }
-.review-card__message {
-  max-width: 80%;
-  padding: 8px 12px;
-  border-radius: 18px;
+.footer__contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+.footer__contact-label {
   font-family: "Muller", sans-serif;
-  font-size: 14px;
-  line-height: 1.4;
-}
-.review-card__message--user {
-  background: #D4CC7B;
-  color: #0C0C0B;
-  align-self: flex-end;
-  border-bottom-right-radius: 4px;
-}
-.review-card__message--reply {
-  background: #25D366;
+  font-weight: 700;
+  font-size: 24px;
   color: #FFFFFF;
-  align-self: flex-start;
-  border-bottom-left-radius: 4px;
+  white-space: nowrap;
 }
-.review-card__time {
-  padding: 8px 16px;
-  color: #888888;
+.footer__contact-value {
   font-family: "Muller", sans-serif;
-  font-size: 12px;
-  text-align: right;
+  font-size: 24px;
+  color: #FFFFFF;
+  line-height: 1.27;
+  letter-spacing: -0.045em;
+}
+.footer__contact-phones {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.footer__contact-phone {
+  font-family: "Muller", sans-serif;
+  font-size: 24px;
+  color: #FFFFFF;
+  text-decoration: none;
+  line-height: 1;
+  letter-spacing: -0.045em;
+}
+.footer__contact-phone:hover {
+  color: #D4CC7B;
+}
+.footer__social {
+  text-align: center;
+}
+.footer__social-title {
+  font-family: "Muller", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #FFFFFF;
+  margin: 0 0 20px;
+  line-height: 1.27;
+  letter-spacing: -0.045em;
+}
+.footer__social-links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.footer__social-link {
+  display: block;
+  width: 49px;
+  height: 49px;
+  transition: transform 0.3s;
+}
+.footer__social-link:hover {
+  transform: scale(1.1);
+}
+.footer__social-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.footer__privacy {
+  font-family: "Muller", sans-serif;
+  font-size: 18px;
+  color: #FFFFFF;
+  text-decoration: none;
+  line-height: 1.27;
+  letter-spacing: -0.045em;
+}
+.footer__privacy:hover {
+  color: #D4CC7B;
+}
+.footer__legal {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+}
+.footer__legal-text {
+  font-family: "Muller", sans-serif;
+  font-size: 24px;
+  color: #FFFFFF;
+  margin: 0;
+  line-height: 1.5;
+  letter-spacing: -0.045em;
 }
 
 @media (max-width: 768px) {
@@ -699,28 +767,61 @@ body {
     font-size: 32px;
     margin-bottom: 40px;
   }
-  .reviews__content {
-    flex-direction: column;
-    gap: 30px;
-    margin-bottom: 40px;
-  }
   .reviews__cards {
-    flex-direction: column;
-    gap: 15px;
+    gap: 20px;
+    flex-wrap: wrap;
   }
-  .reviews__car-image {
-    width: 100%;
-    height: 400px;
-  }
-  .reviews__dots {
-    gap: 10px;
-  }
-  .reviews__dot {
-    width: 16px;
-    height: 16px;
+  .reviews__bg-car {
+    display: none;
   }
   .review-card {
-    height: 250px;
+    width: 200px;
+    height: 320px;
+  }
+  .footer {
+    padding: 30px 0 0;
+  }
+  .footer__content {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+  }
+  .footer__logo {
+    width: 250px;
+    height: 90px;
+  }
+  .footer__info {
+    max-width: 100%;
+  }
+  .footer__description {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .footer__contact-item {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .footer__contact-label, .footer__contact-value, .footer__contact-phone {
+    font-size: 20px;
+  }
+  .footer__social-title {
+    font-size: 20px;
+  }
+  .footer__social-links {
+    gap: 15px;
+  }
+  .footer__social-link {
+    width: 40px;
+    height: 40px;
+  }
+  .footer__privacy {
+    font-size: 16px;
+  }
+  .footer__legal-text {
+    font-size: 18px;
+    text-align: center;
   }
 }
 
