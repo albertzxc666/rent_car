@@ -1,23 +1,23 @@
 @font-face {
   font-family: 'Muller';
-  src: url('../scss/fonts/MullerRegular.woff2') format('woff2'),
-       url('../scss/fonts/MullerRegular.woff') format('woff');
+  src: url('../fonts/MullerRegular.woff2') format('woff2'),
+       url('../fonts/MullerRegular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Muller';
-  src: url('../scss/fonts/MullerMedium.woff2') format('woff2'),
-       url('../scss/fonts/MullerMedium.woff') format('woff');
+  src: url('../fonts/MullerMedium.woff2') format('woff2'),
+       url('../fonts/MullerMedium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Muller';
-  src: url('../scss/fonts/MullerBold.woff2') format('woff2'),
-       url('../scss/fonts/MullerBold.woff') format('woff');
+  src: url('../fonts/MullerBold.woff2') format('woff2'),
+       url('../fonts/MullerBold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
 }
@@ -98,6 +98,25 @@ body {
     color: #FFFFFF;
     text-decoration: none;
   }
+
+  &__burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  &__burger-line {
+    width: 100%;
+    height: 2px;
+    background: #FFFFFF;
+    transition: all 0.3s;
+  }
 }
 
 .hero {
@@ -105,8 +124,9 @@ body {
   padding: 120px 0 100px;
   margin-top: 80px;
   background-image: url('../img/hero-bg.png');
-  background-size: cover;
+  background-size: 70%;
   background-position: center;
+  background-repeat: no-repeat;
 
   &__container {
     max-width: 1170px;
@@ -166,6 +186,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    max-width: 100%;
   }
 } 
 
@@ -823,6 +844,26 @@ body {
 }
 
 @media (max-width: $breakpoint-mobile) {
+  .header {
+    padding: 15px 0;
+
+    &__container {
+      justify-content: space-between;
+    }
+
+    &__nav {
+      display: none;
+    }
+
+    &__phone {
+      display: none;
+    }
+
+    &__burger {
+      display: flex;
+    }
+  }
+
   .cars__list {
     flex-direction: column;
     gap: 24px;
@@ -837,6 +878,84 @@ body {
   .cars__title {
     font-size: 32px;
     margin-bottom: 32px;
+  }
+
+  .hero {
+    padding: 80px 0 60px;
+    margin-top: 60px;
+    background-size: 50%;
+
+    &__container {
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    &__title {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+    &__benefits {
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+
+    &__benefit {
+      font-size: 16px;
+    }
+
+    &__button {
+      font-size: 18px;
+      padding: 12px 24px;
+      position: relative;
+      z-index: 2;
+    }
+
+    &__image-wrap {
+      position: relative;
+      width: 100%;
+      height: auto;
+      margin-top: 30px;
+    }
+
+    &__image {
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+
+  .conditions {
+    padding: 60px 0;
+
+    &__title {
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+
+    &__list {
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    &__item {
+      max-width: 100%;
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+    }
+
+    &__item-icon {
+      width: 70px;
+      height: 70px;
+      flex-shrink: 0;
+    }
+
+    &__item-text {
+      font-size: 20px;
+      text-align: left;
+    }
   }
 
   .order-form {
