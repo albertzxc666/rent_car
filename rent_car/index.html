@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Аренда авто</title>
-  <link rel="stylesheet" href="css/style.css?v=1.0">
+  <link rel="stylesheet" href="css/style.css?v=1.1">
 </head>
 <body>
   <header class="header">
@@ -14,13 +14,12 @@
       </a>
       <nav class="header__nav">
         <ul class="header__list">
-          <li class="header__item"><a href="#" class="header__link">Наш парк</a></li>
-          <li class="header__item"><a href="#" class="header__link">Условия аренды</a></li>
-          <li class="header__item"><a href="#" class="header__link">Отзывы</a></li>
-          <li class="header__item"><a href="#" class="header__link">Контакты</a></li>
+          <li class="header__item"><a href="#cars" class="header__link">Наш парк</a></li>
+          <li class="header__item"><a href="#conditions" class="header__link">Условия аренды</a></li>
+          <li class="header__item"><a href="#order-form" class="header__link">Забронировать</a></li>
         </ul>
       </nav>
-      <a href="tel:+79781173839" class="header__phone">+79781173839</a>
+      <a href="tel:+79781173839" class="header__phone">+79127220106</a>
     </div>
   </header>
   <main class="main">
@@ -35,7 +34,407 @@
         <a href="#" class="hero__button">Выбрать авто</a>
       </div>
       <div class="hero__image-wrap">
-        <img src="img/hero-car.png" alt="Gold BMW M4" class="hero__image">
+        <img src="img/hero-car.png" alt="Gold BMW M8" class="hero__image">
+      </div>
+    </section>
+    <section class="cars" id="cars">
+      <div class="cars__container">
+        <h2 class="cars__title">Наш автопарк</h2>
+        <div class="cars__list">
+          <div class="car-card">
+            <div class="car-card__image-wrap">
+              <img src="img/BMW-M4.jpg" alt="BMW M4" class="car-card__image">
+            </div>
+            <div class="car-card__info">
+              <h3 class="car-card__name">BMW M4</h3>
+              <div class="car-card__features">
+                <div class="car-card__feature">
+                  <img src="img/calendar-icon.svg" alt="" class="car-card__feature-icon">
+                  <span class="car-card__feature-value">2025</span>
+                  <span class="car-card__feature-label">год</span>
+                </div>
+                <div class="car-card__feature">
+                  <img src="img/transmission-icon.svg" alt="" class="car-card__feature-icon">
+                  <span class="car-card__feature-value">3.0</span>
+                  <span class="car-card__feature-label">автомат</span>
+                </div>
+                <div class="car-card__feature">
+                  <img src="img/engine-icon.svg" alt="" class="car-card__feature-icon">
+                  <span class="car-card__feature-value">510</span>
+                  <span class="car-card__feature-label">л.с.</span>
+                </div>
+                <div class="car-card__feature">
+                  <img src="img/fuel-icon.svg" alt="" class="car-card__feature-icon">
+                  <span class="car-card__feature-value">Бензин</span>
+                  <span class="car-card__feature-label">топливо</span>
+                </div>
+              </div>
+              <div class="car-card__bottom">
+                <div class="car-card__price">от 20 000 ₽/сутки</div>
+                <a href="#" class="car-card__button">Забронировать</a>
+              </div>
+            </div>
+          </div>
+          <div class="car-card">
+            <div class="car-card__image-wrap">
+              <img src="img/BMW-Z4.jpg" alt="BMW Z4" class="car-card__image">
+            </div>
+            <div class="car-card__info">
+              <h3 class="car-card__name">BMW Z4</h3>
+              <div class="car-card__features">
+                <div class="car-card__feature">
+                  <img src="img/calendar-icon.svg" alt="" class="car-card__feature-icon">
+                  <span class="car-card__feature-value">2021</span>
+                  <span class="car-card__feature-label">год</span>
+                </div>
+                <div class="car-card__feature">
+                  <img src="img/transmission-icon.svg" alt="" class="car-card__feature-icon">
+                  <span class="car-card__feature-value">3.0</span>
+                  <span class="car-card__feature-label">автомат</span>
+                </div>
+                <div class="car-card__feature">
+                  <img src="img/engine-icon.svg" alt="" class="car-card__feature-icon">
+                  <span class="car-card__feature-value">340</span>
+                  <span class="car-card__feature-label">л.с.</span>
+                </div>
+                <div class="car-card__feature">
+                  <img src="img/fuel-icon.svg" alt="" class="car-card__feature-icon">
+                  <span class="car-card__feature-value">Бензин</span>
+                  <span class="car-card__feature-label">топливо</span>
+                </div>
+              </div>
+              <div class="car-card__bottom">
+                <div class="car-card__price">от 15 000 ₽/сутки</div>
+                <a href="#" class="car-card__button">Забронировать</a>
+              </div>
+            </div>
+          </div>
+          <div class="car-card">
+            <div class="car-card__image-wrap">
+              <img src="img/BMW-M8.jpg" alt="BMW-M8" class="car-card__image">
+            </div>
+            <div class="car-card__info">
+              <h3 class="car-card__name">BMW M8</h3>
+              <div class="car-card__features">
+                <div class="car-card__feature">
+                  <img src="img/calendar-icon.svg" alt="" class="car-card__feature-icon">
+                  <span class="car-card__feature-value">2020</span>
+                  <span class="car-card__feature-label">год</span>
+                </div>
+                <div class="car-card__feature">
+                  <img src="img/transmission-icon.svg" alt="" class="car-card__feature-icon">
+                  <span class="car-card__feature-value">4.4</span>
+                  <span class="car-card__feature-label">автомат</span>
+                </div>
+                <div class="car-card__feature">
+                  <img src="img/engine-icon.svg" alt="" class="car-card__feature-icon">
+                  <span class="car-card__feature-value">625</span>
+                  <span class="car-card__feature-label">л.с.</span>
+                </div>
+                <div class="car-card__feature">
+                  <img src="img/fuel-icon.svg" alt="" class="car-card__feature-icon">
+                  <span class="car-card__feature-value">Бензин</span>
+                  <span class="car-card__feature-label">топливо</span>
+                </div>
+              </div>
+              <div class="car-card__bottom">
+                <div class="car-card__price">от 30 000 ₽/сутки</div>
+                <a href="#" class="car-card__button">Забронировать</a>
+              </div>
+            </div>
+          </div>
+          <div class="car-card">
+            <div class="car-card__image-wrap">
+              <img src="img/MB-E63.jpg" alt="MB-E63" class="car-card__image">
+            </div>
+            <div class="car-card__info">
+              <h3 class="car-card__name">Mercedes-Benz E63</h3>
+              <div class="car-card__features">
+                <div class="car-card__feature">
+                  <img src="img/calendar-icon.svg" alt="" class="car-card__feature-icon">
+                  <span class="car-card__feature-value">2025</span>
+                  <span class="car-card__feature-label">год</span>
+                </div>
+                <div class="car-card__feature">
+                  <img src="img/transmission-icon.svg" alt="" class="car-card__feature-icon">
+                  <span class="car-card__feature-value">4.0</span>
+                  <span class="car-card__feature-label">автомат</span>
+                </div>
+                <div class="car-card__feature">
+                  <img src="img/engine-icon.svg" alt="" class="car-card__feature-icon">
+                  <span class="car-card__feature-value">571</span>
+                  <span class="car-card__feature-label">л.с.</span>
+                </div>
+                <div class="car-card__feature">
+                  <img src="img/fuel-icon.svg" alt="" class="car-card__feature-icon">
+                  <span class="car-card__feature-value">Бензин</span>
+                  <span class="car-card__feature-label">топливо</span>
+                </div>
+              </div>
+              <div class="car-card__bottom">
+                <div class="car-card__price">от 25 000 ₽/сутки</div>
+                <a href="#" class="car-card__button">Забронировать</a>
+              </div>
+            </div>
+          </div>
+          <div class="car-card">
+            <div class="car-card__image-wrap">
+              <img src="img/MB-GT63.jpg" alt="MB-GT63" class="car-card__image">
+            </div>
+            <div class="car-card__info">
+              <h3 class="car-card__name">Mercedes-Benz GT63</h3>
+              <div class="car-card__features">
+                <div class="car-card__feature">
+                  <img src="img/calendar-icon.svg" alt="" class="car-card__feature-icon">
+                  <span class="car-card__feature-value">2022</span>
+                  <span class="car-card__feature-label">год</span>
+                </div>
+                <div class="car-card__feature">
+                  <img src="img/transmission-icon.svg" alt="" class="car-card__feature-icon">
+                  <span class="car-card__feature-value">4.0</span>
+                  <span class="car-card__feature-label">автомат</span>
+                </div>
+                <div class="car-card__feature">
+                  <img src="img/engine-icon.svg" alt="" class="car-card__feature-icon">
+                  <span class="car-card__feature-value">585</span>
+                  <span class="car-card__feature-label">л.с.</span>
+                </div>
+                <div class="car-card__feature">
+                  <img src="img/fuel-icon.svg" alt="" class="car-card__feature-icon">
+                  <span class="car-card__feature-value">Бензин</span>
+                  <span class="car-card__feature-label">топливо</span>
+                </div>
+              </div>
+              <div class="car-card__bottom">
+                <div class="car-card__price">от 30 000 ₽/сутки</div>
+                <a href="#" class="car-card__button">Забронировать</a>
+              </div>
+            </div>
+          </div>
+          <div class="car-card">
+            <div class="car-card__image-wrap">
+              <img src="img/MB-G63.jpeg" alt="MB-G63" class="car-card__image">
+            </div>
+            <div class="car-card__info">
+              <h3 class="car-card__name">Mercedes-Benz G63</h3>
+              <div class="car-card__features">
+                <div class="car-card__feature">
+                  <img src="img/calendar-icon.svg" alt="" class="car-card__feature-icon">
+                  <span class="car-card__feature-value">2022</span>
+                  <span class="car-card__feature-label">год</span>
+                </div>
+                <div class="car-card__feature">
+                  <img src="img/transmission-icon.svg" alt="" class="car-card__feature-icon">
+                  <span class="car-card__feature-value">4.0</span>
+                  <span class="car-card__feature-label">автомат</span>
+                </div>
+                <div class="car-card__feature">
+                  <img src="img/engine-icon.svg" alt="" class="car-card__feature-icon">
+                  <span class="car-card__feature-value">585</span>
+                  <span class="car-card__feature-label">л.с.</span>
+                </div>
+                <div class="car-card__feature">
+                  <img src="img/fuel-icon.svg" alt="" class="car-card__feature-icon">
+                  <span class="car-card__feature-value">Бензин</span>
+                  <span class="car-card__feature-label">топливо</span>
+                </div>
+              </div>
+              <div class="car-card__bottom">
+                <div class="car-card__price">от 25 000 ₽/сутки</div>
+                <a href="#" class="car-card__button">Забронировать</a>
+              </div>
+            </div>
+          </div>
+          <div class="car-card">
+            <div class="car-card__image-wrap">
+              <img src="img/AUDI-RS7.png" alt="AUDI-RS7" class="car-card__image">
+            </div>
+            <div class="car-card__info">
+              <h3 class="car-card__name">Audi RS7</h3>
+              <div class="car-card__features">
+                <div class="car-card__feature">
+                  <img src="img/calendar-icon.svg" alt="" class="car-card__feature-icon">
+                  <span class="car-card__feature-value">2021</span>
+                  <span class="car-card__feature-label">год</span>
+                </div>
+                <div class="car-card__feature">
+                  <img src="img/transmission-icon.svg" alt="" class="car-card__feature-icon">
+                  <span class="car-card__feature-value">4.0</span>
+                  <span class="car-card__feature-label">автомат</span>
+                </div>
+                <div class="car-card__feature">
+                  <img src="img/engine-icon.svg" alt="" class="car-card__feature-icon">
+                  <span class="car-card__feature-value">600</span>
+                  <span class="car-card__feature-label">л.с.</span>
+                </div>
+                <div class="car-card__feature">
+                  <img src="img/fuel-icon.svg" alt="" class="car-card__feature-icon">
+                  <span class="car-card__feature-value">Бензин</span>
+                  <span class="car-card__feature-label">топливо</span>
+                </div>
+              </div>
+              <div class="car-card__bottom">
+                <div class="car-card__price">от 20 000 ₽/сутки</div>
+                <a href="#" class="car-card__button">Забронировать</a>
+              </div>
+            </div>
+          </div>
+          <div class="car-card">
+            <div class="car-card__image-wrap">
+              <img src="img/AUDI-RSQ8.jpg" alt="AUDI-RSQ8" class="car-card__image">
+            </div>
+            <div class="car-card__info">
+              <h3 class="car-card__name">Audi RSQ8</h3>
+              <div class="car-card__features">
+                <div class="car-card__feature">
+                  <img src="img/calendar-icon.svg" alt="" class="car-card__feature-icon">
+                  <span class="car-card__feature-value">2022</span>
+                  <span class="car-card__feature-label">год</span>
+                </div>
+                <div class="car-card__feature">
+                  <img src="img/transmission-icon.svg" alt="" class="car-card__feature-icon">
+                  <span class="car-card__feature-value">4.0</span>
+                  <span class="car-card__feature-label">автомат</span>
+                </div>
+                <div class="car-card__feature">
+                  <img src="img/engine-icon.svg" alt="" class="car-card__feature-icon">
+                  <span class="car-card__feature-value">600</span>
+                  <span class="car-card__feature-label">л.с.</span>
+                </div>
+                <div class="car-card__feature">
+                  <img src="img/fuel-icon.svg" alt="" class="car-card__feature-icon">
+                  <span class="car-card__feature-value">Бензин</span>
+                  <span class="car-card__feature-label">топливо</span>
+                </div>
+              </div>
+              <div class="car-card__bottom">
+                <div class="car-card__price">от 25 000 ₽/сутки</div>
+                <a href="#" class="car-card__button">Забронировать</a>
+              </div>
+            </div>
+          </div>
+          <div class="car-card">
+            <div class="car-card__image-wrap">
+              <img src="img/AUDI-R8.jpg" alt="AUDI-R8" class="car-card__image">
+            </div>
+            <div class="car-card__info">
+              <h3 class="car-card__name">Audi R8</h3>
+              <div class="car-card__features">
+                <div class="car-card__feature">
+                  <img src="img/calendar-icon.svg" alt="" class="car-card__feature-icon">
+                  <span class="car-card__feature-value">2023</span>
+                  <span class="car-card__feature-label">год</span>
+                </div>
+                <div class="car-card__feature">
+                  <img src="img/transmission-icon.svg" alt="" class="car-card__feature-icon">
+                  <span class="car-card__feature-value">5.2</span>
+                  <span class="car-card__feature-label">автомат</span>
+                </div>
+                <div class="car-card__feature">
+                  <img src="img/engine-icon.svg" alt="" class="car-card__feature-icon">
+                  <span class="car-card__feature-value">620</span>
+                  <span class="car-card__feature-label">л.с.</span>
+                </div>
+                <div class="car-card__feature">
+                  <img src="img/fuel-icon.svg" alt="" class="car-card__feature-icon">
+                  <span class="car-card__feature-value">Бензин</span>
+                  <span class="car-card__feature-label">топливо</span>
+                </div>
+              </div>
+              <div class="car-card__bottom">
+                <div class="car-card__price">от 35 000 ₽/сутки</div>
+                <a href="#" class="car-card__button">Забронировать</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="conditions" id="conditions">
+      <div class="conditions__container">
+        <h2 class="conditions__title">Условия аренды</h2>
+        <div class="conditions__list">
+          <div class="conditions__item">
+            <img src="img/passport-icon.svg" alt="" class="conditions__item-icon">
+            <p class="conditions__item-text">Паспорт</p>
+          </div>
+          <div class="conditions__item">
+            <img src="img/license-icon.svg" alt="" class="conditions__item-icon">
+            <p class="conditions__item-text">Водительское удостоверение</p>
+          </div>
+          <div class="conditions__item">
+            <img src="img/age-icon.svg" alt="" class="conditions__item-icon">
+            <p class="conditions__item-text">Возраст от 22 лет</p>
+          </div>
+          <div class="conditions__item">
+            <img src="img/experience-icon.svg" alt="" class="conditions__item-icon">
+            <p class="conditions__item-text">Водительский стаж от 3 лет</p>
+          </div>
+        </div>
+        <a href="#" class="conditions__button">Договор аренды</a>
+      </div>
+    </section>
+    <section class="order-form" id="order-form">
+      <div class="order-form__container">
+        <div class="order-form__content">
+          <h2 class="order-form__title">Аренда автомобиля</h2>
+          <form class="order-form__form">
+            <div class="order-form__field order-form__field--full">
+              <label class="order-form__label">Машина</label>
+              <select class="order-form__input order-form__select">
+                <option value="" disabled selected>Выберите автомобиль</option>
+                <option value="bmw-m4">BMW M4</option>
+                <option value="bmw-z4">BMW Z4</option>
+                <option value="bmw-m8">BMW M8</option>
+                <option value="mb-e63">Mercedes-Benz E63</option>
+                <option value="mb-gt63">Mercedes-Benz GT63</option>
+                <option value="mb-g63">Mercedes-Benz G63</option>
+                <option value="audi-rs7">Audi RS7</option>
+                <option value="audi-rsq8">Audi RSQ8</option>
+                <option value="audi-r8">Audi R8</option>
+              </select>
+            </div>
+            <div class="order-form__fields">
+              <div class="order-form__column">
+                              <div class="order-form__field">
+                <label class="order-form__label">Дата получения</label>
+                <input type="text" class="order-form__input" placeholder="Дата получения">
+              </div>
+                              <div class="order-form__field">
+                <label class="order-form__label">Время получения</label>
+                <input type="text" class="order-form__input" placeholder="Время получения">
+              </div>
+                              <div class="order-form__field">
+                <label class="order-form__label">Место получения</label>
+                <select class="order-form__input order-form__select">
+                  <option value="" disabled selected>Выберите адрес получения</option>
+                  <option value="daurskaya">г. Казань, ул. Даурская, 48В</option>
+                  <option value="ershova">г. Казань, ул. Николая Ершова, 1А</option>
+                  <option value="teatralnaya">г. Казань, ул. Театральная, 7/31</option>
+                </select>
+              </div>
+              </div>
+              <div class="order-form__column">
+                              <div class="order-form__field">
+                <label class="order-form__label">Дата возврата</label>
+                <input type="text" class="order-form__input" placeholder="Дата возврата">
+              </div>
+                              <div class="order-form__field">
+                <label class="order-form__label">Время возврата</label>
+                <input type="text" class="order-form__input" placeholder="Время возврата">
+              </div>
+                              <div class="order-form__field">
+                <label class="order-form__label">Место возврата</label>
+                <select class="order-form__input order-form__select">
+                  <option value="" disabled selected>Выберите адрес возврата</option>
+                  <option value="korolenko">г. Казань, ул. Короленко 28Б</option>
+                </select>
+              </div>
+              </div>
+            </div>
+            <button type="submit" class="order-form__button">Далее</button>
+          </form>
+        </div>
       </div>
     </section>
   </main>
